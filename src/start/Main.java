@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import controllers.MainController;
@@ -18,13 +19,10 @@ import java.util.ResourceBundle;
 
 public class Main extends Application implements Observer {
 
-
     private static final String FXML_MAIN = "../fxml/main.fxml";
-    public static final String BUNDLES_FOLDER = "bundles.Locale";
+    public static final String BUNDLES_FOLDER = "Locale";
 
     private Stage primaryStage;
-
-    private Parent fxmlMain;
 
     private MainController mainController;
     private FXMLLoader fxmlLoader;
@@ -51,9 +49,8 @@ public class Main extends Application implements Observer {
     // загружает дерево компонентов и возвращает в виде VBox (корневой элемент в FXML)
     private VBox loadFXML(Locale locale) {
         fxmlLoader = new FXMLLoader();
-
+        fxmlLoader.setResources(ResourceBundle.getBundle(BUNDLES_FOLDER, locale));
         fxmlLoader.setLocation(getClass().getResource(FXML_MAIN));
-        fxmlLoader.setResources(ResourceBundle.getBundle("bundles/Locale_ru"));
 
         VBox node = null;
 

@@ -81,8 +81,8 @@ public class MainController extends Observable implements Initializable {
 
     private ObservableList<Person> backupList;
 
-    private static final String RU_CODE="ru";
-    private static final String EN_CODE="en";
+    private static final String RU_CODE = "ru";
+    private static final String EN_CODE = "en";
 
 
     @Override
