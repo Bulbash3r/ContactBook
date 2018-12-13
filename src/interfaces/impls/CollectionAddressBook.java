@@ -1,8 +1,8 @@
 package interfaces.impls;
 
+import interfaces.AddressBook;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import interfaces.AddressBook;
 import objects.Person;
 
 public class CollectionAddressBook implements AddressBook {
@@ -16,7 +16,7 @@ public class CollectionAddressBook implements AddressBook {
 
     @Override
     public void update(Person person) {
-        //TODO докрутить БД
+        //TODO докрутить БД или хотя бы файлы
     }
 
     @Override
@@ -28,14 +28,9 @@ public class CollectionAddressBook implements AddressBook {
         return personList;
     }
 
-    public void fillTestData(){
+    public void fillTestData() {
+        //TODO докручиваем файлики
         personList.add(new Person("Артём Климчанский", "88005553535"));
-        personList.add(new Person("Роман Романов", "345345345"));
-        personList.add(new Person("Антон Иванов", "345345345"));
-        personList.add(new Person("Джон Маклейн", "23423423"));
-        personList.add(new Person("Джек Воробей", "234234"));
-        personList.add(new Person("Алиса Ивановна", "456456"));
-        personList.add(new Person("Боб Марли", "34534345"));
     }
 }
 
