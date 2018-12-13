@@ -130,9 +130,9 @@ public class MainController extends Observable implements Initializable {
         comboLocales.getItems().add(langRU);
         comboLocales.getItems().add(langEN);
 
-        if (LocaleManager.getCurrentLang() == null){// по-умолчанию показывать выбранный русский язык (можно текущие настройки языка сохранять в файл)
+        if (LocaleManager.getCurrentLang() == null) {// по-умолчанию показывать выбранный русский язык (можно текущие настройки языка сохранять в файл)
             comboLocales.getSelectionModel().select(0);
-        }else{
+        } else {
             comboLocales.getSelectionModel().select(LocaleManager.getCurrentLang().getIndex());
         }
     }
