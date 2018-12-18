@@ -54,7 +54,7 @@ private void initListeners() {
 }
 ```
 
-Класс `Main.java` реализует унаследованный от интерфейса `Observer метод update(Observable, Object)`:
+Класс `Main.java` реализует унаследованный от интерфейса Observer метод `update(Observable, Object)`:
 
 ```Java
     @Override
