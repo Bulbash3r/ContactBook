@@ -30,7 +30,7 @@
 
 Ниже представлена часть диаграммы классов проекта, отображающая работу шаблона.
 
-![Диграмма классов](https://github.com/Bulbash3r/ContactBook/blob/master/Refactoring/Diagram.png?raw=true)
+![Диграмма классов](https://github.com/Bulbash3r/ContactBook/blob/master/Refactoring/Diagram.png?raw=true)  
 Рассмотрим подробнее код программы 
 
 `MainController.java`
